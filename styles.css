@@ -1,0 +1,990 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+a:link {
+    color: rgb(0, 255, 13);
+}
+a:visited {
+    color: rgb(255, 0, 217);
+}
+a:hover {
+    color: rgb(234, 255, 0);
+}
+a:active {
+    color: violet;
+}
+
+body {
+    background-color: whitesmoke;
+    background-image: url(images/empty-sea-beach-background_74190-1749-transformed.jpeg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: normal;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: normal;
+    font-size: smaller;
+    margin: 0%;
+    width: 100%;
+}
+
+section {
+    position: relative;
+}
+
+h1 {
+    margin: 3%;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 5%;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+img {
+    position: relative;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+/*Anchor tag line remover*/
+.gfg {
+    text-decoration: none;
+}
+
+/*Title heading*/
+.title {
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+/* Table for the icons on top*/
+.icontable {
+    color: white;
+    position: relative;
+    border-spacing: 35px 0;
+}
+.iconth1 {
+    color: white;
+}
+.iconth2 {
+    color: white;
+}
+@media (max-width: 768px) {
+    .iconth1 {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .iconth2{
+        margin-left: -20%;
+    }
+}
+
+/* Table for navigation*/
+.navigationtable {
+    color: white;
+    align-content: center;
+    margin: 40px auto 0;
+    border-collapse: collapse;
+    padding: auto;
+    width: 90%;
+}
+@media (max-width: 768px) {
+    .navigationtable, .navigationtable tr, .navigationtable th {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Sub sections table*/
+.sec3table {
+    width: 90%;
+    padding: 2%;
+    text-align: left;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec3th1{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding: 5%;
+    width: 30%;
+    text-align: justify;
+    line-height: 1.5;
+    position: relative;
+}
+.sec3th2{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding: 5%;
+    width: 30%;
+    text-align: justify;
+    line-height: 1.5;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .sec3table, .sec3th1, .sec3th2 {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Vission-Mission table*/
+.vismis {
+    width: 100%;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.vismisth{
+    border: solid #000000;
+    border-width: 5px;
+    width: 50%;
+    padding: 2%;
+}
+
+/* Summary table for Turtle categories*/
+.summarytable {
+    width: 90%;
+    border-collapse: collapse;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.summarytable thead {
+    background-color: #123456;
+    color: white;
+}
+.summarytable thead th {
+    font-size: large;
+    letter-spacing: 0.35px;
+    vertical-align: top;
+    border: 3px;
+    opacity: 1;
+    padding: 2%;
+}
+.summarytable tbody th {
+    background-color: #123456;
+    color: white;
+    font-size: large;
+    padding: 1%;
+    letter-spacing: 0.35px;
+    vertical-align: top;
+    text-align: center;
+}
+.summarytable tbody td {
+    letter-spacing: 0.35px;
+    font-weight: bolder;
+    padding: 1%;
+    text-align: center;
+}
+.summarytable tfoot {
+    background-color: #ff0000;
+    color: white;
+}
+.summarytable tfoot th {
+    font-size: 30pt;
+    letter-spacing: 0.35px;
+    vertical-align: top;
+    padding: 2%;
+}
+.summarytable thead th {
+    border: 2px solid white;
+}
+.summarytable tbody th {
+    border: 2px solid white;
+}
+.summarytable tbody tr td {
+    border: 2px solid #000000;
+}
+@media (max-width: 768px){
+    .summarytable thead{
+        display: none;
+    }
+    .summarytable tfoot{
+        display: none;
+    }
+    .summarytable, .summarytable tbody, .summarytable tr, .summarytable td {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .summarytable tr {
+        margin-bottom: 15px;
+    }
+    .summarytable tbody tr td {
+        text-align: right;
+        position: relative;
+        padding-left: 55%;
+    }
+    .summarytable td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+        font-size: large;
+
+    }
+}
+
+/* Buttons for navigation*/
+.navbutton {
+    border: none;
+    color:rgba(0, 0, 0, 0.603);
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #123456;
+    color: white;
+    border: 2px solid #123456;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.button2 {
+    background-color: #123456;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+.button2:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* Drop down button for other turtle hatcheries*/
+.drpdown-btn {
+    background-color: #123456;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+.drpdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #123456;
+    min-width: 190px;
+}
+.drpdown:hover .drpdown-menu {
+    display: block;
+}
+.drpdown-menu a {
+    color: white;
+    padding: 8px 16px;
+    display: block;
+}
+.drpdown-menu a:hover {
+    background-color: white;
+    color: #000000;
+}
+
+/* Paragraph1 - Home*/
+.homepara1 {
+    text-align: justify;
+    font-size: larger;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-weight: bold;
+    line-height: 1.5;
+    position: relative;
+}
+
+/*Sub section paragaraghs*/
+.homepara2 {
+    text-align: justify;
+    margin: 2%;
+    font-weight: bold;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* Hikkaduwa para*/
+.hikpara {
+    text-align: justify;
+    margin: 2%;
+    font-weight: bold;
+    line-height: 1.5;
+    position: relative;
+}
+
+/* threats margins*/
+.threathead {
+    margin-left: 2%;
+}
+
+/* threats headings */
+.threath2 {
+    color: #ff0000;
+    margin-left: 2%;
+}
+
+/* section images*/
+.secimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+/* headings center */
+.maphead {
+    text-align: center;
+}
+
+/* references para*/
+.ref {
+    text-align: justify;
+    margin: 2%;
+    font-weight: bold;
+    line-height: 1.5;
+    position: relative;
+    font-size: smaller;
+    color: #000000;
+}
+
+/* div class for the maintab on top*/
+.tabmain {
+    border: 5px;
+    background-color: #123456;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    position: fixed;
+    align-content: center;
+    z-index: 1;
+}
+.tab1 {
+    float: left;
+    border: 3px;
+    width: 40%;
+    background-color: #123456;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .tab1{
+        width: 20%;
+        margin-left: -5%;
+    }
+}
+.tab2 {
+    float: right;
+    border: 3px;
+    width: 50%;
+    background-color: #123456;
+    z-index: 1;
+}
+
+/* div class for navigation*/
+.navmain{
+    border: 5px;
+    background-color: #123456;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    position: fixed;
+    align-content: center;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .navmain {
+            border: 5px;
+            background-color: #123456;
+            width: 100%;
+            height: 290px;
+            padding: 2%;
+            position: sticky;
+            top: 0px;
+            align-content: center;
+            z-index: 1;
+            overflow: hidden;
+
+        }
+}
+
+.nav1 {
+    float: left;
+    width: 20%;
+    border: 3px;
+    background-color: #123456;
+    z-index: 1;
+}
+.nav2 {
+    float: right;
+    width: 80%;
+    border: 3px;
+    background-color: #123456;
+    z-index: 1;
+}
+
+/* div class for turtle categories*/
+.categorymain {
+    border: solid #000000;
+    width: relative;
+    height: relative;
+    padding: 2%;
+    align-content: center;
+    z-index: 0;
+    margin: 2%;
+}
+.category1 {
+    float: left;
+    width: 55%;
+    border: 3px;
+    z-index: 0;
+    height: relative;
+}
+.category2 {
+    float: right;
+    width: relative;
+    border: 3px;
+    z-index: 0;
+    height: relative;
+}
+.category3 {
+    align-content: center;
+    width: relative;
+    height: relative;
+    margin-top: 20%;
+    border: 3px;
+}
+
+/* div class for about us*/
+.aboutmain {
+    width: relative;
+    height: 250px;
+    padding: 2%;
+    align-content: center;
+    z-index: 0;
+    margin: 2%;
+}
+.about1 {
+    float: left;
+    width: 60%;
+    border: 3px;
+    z-index: 0;
+    margin-top: 0;
+    height: relative;
+}
+.about2 {
+    float: right;
+    width: 30%;
+    border: 3px;
+    z-index: 0;
+    margin-top: 0%;
+    height: relative;
+}
+
+/* table class for footer */
+.foottable {
+    background-color: #123456;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+}
+@media (max-width: 768px) {
+    .foottable, .foottable th {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* main div class for turtle categories*/
+.turtlecat {
+        width: 100%;
+        height: relative;
+        padding: 1%;
+        align-content: center;
+        z-index: 1;
+        margin-top: 5%;
+}
+
+/* main div class for hikkaduwa */
+.hikkaduwa {
+    width: 100%;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    z-index: 1;
+    margin-top: 8%;
+}
+
+/* main div class for threats for turtles*/
+.turtthreats {
+    width: 100%;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    z-index: 1;
+    margin-top: 8%;
+}
+
+/* main div class for about us*/
+.turtabout {
+    width: 100%;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    z-index: 1;
+    margin-top: 8%;
+}
+
+/* images classes */
+.img1 {
+    width: 70%;
+    height: auto;
+}
+.img2 {
+    width: 100%;
+    height: 200px;
+}
+.img3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
+.img4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+}
+.img5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.img6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+.mapimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 300px;
+}
+.vid1 {
+    width: 60%;
+    height: auto;
+    z-index: 0;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Image slideshow */
+.slider1 {
+    width: 60%;
+    height: 500px;
+    background: url(images/2215942.jpg);
+    background-size: 100% 100%;
+    margin: 2%;
+    animation: slide 15s infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes slide {
+    25% {
+        background: url(images/2215942.jpg);
+        background-size: 100% 100%;
+    }
+    50% {
+        background: url(images/01_sea_turtle.jpg);
+        background-size: 100% 100%;
+    }
+    75% {
+        background: url(images/Green_Sea_Turtle._\(17219615561\).jpg);
+        background-size: 100% 100%;
+    }
+    100% {
+        background: url(images/Kagi-turtle-hatchlings-min.jpg);
+        background-size: 100% 100%;
+    }
+}
+@media (max-width: 768px){
+    .slider1 {
+        width: 90%;
+        height: 200px;
+    }
+}
+.slider2 {
+    width: 60%;
+    height: 500px;
+    background: url(images/ezgif-2-8fdd945366.jpg);
+    background-size: 100% 100%;
+    margin: 2%;
+    animation: slide2 15s infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes slide2 {
+    25% {
+        background: url(images/ezgif-2-8fdd945366.jpg);
+        background-size: 100% 100%;
+    }
+    50% {
+        background: url(images/ezgif-1-b0f4c94d71.jpg);
+        background-size: 100% 100%;
+    }
+    75% {
+        background: url(images/1591292_orig.jpg);
+        background-size: 100% 100%;
+    }
+    100% {
+        background: url(images/d527e0c11687b8791ea23bb91fb1c056.jpg);
+        background-size: 100% 100%;
+    }
+}
+@media (max-width: 768px){
+    .slider2 {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+
+/* purchases and donations page */
+.purandd {
+    width: 100%;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    z-index: 1;
+    margin-top: 7%;
+}
+
+/* tickets page*/
+.tickets {
+    width: relative;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    margin-top: 15%;
+    z-index: 0;
+}
+@media (max-width: 768px){
+    .tickets {
+        margin-top: 30%;
+    }
+}
+.ticket1{
+    float: left;
+    width: 60%;
+    height: relative;
+}
+@media (max-width: 768px){
+    .ticket1 {
+        width: 60%;
+    }
+}
+.ticket2 {
+    float: right;
+    width: 30%;
+    height: relative;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    padding: 2%;
+}
+@media (max-width: 768px){
+    .ticket2 {
+        width: 40%;
+    }
+}
+
+.detailsmain {
+    width: relative;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    z-index: 0;
+    margin-top: 3%;
+}
+.paymentmain{
+    width: relative;
+    height: relative;
+    padding: 1%;
+    align-content: center;
+    z-index: 0;
+    margin-top: 3%;
+}
+
+.headpandd {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.donor {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffffff57;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form {
+    width: 80%;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .form, .form th, .form tr{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+legend {
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=number], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=numbers], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=date], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=month], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+textarea{
+    height: 100px;
+}
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+input[type=submit] {
+    background-color: #aa0404;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: large;
+}
+input[type=submit]:hover {
+    background-color: #26ac0e;
+}
+.payment {
+    width: 5%;
+    height: auto;
+}
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  [type=radio]:checked + img {
+    outline: 2px solid rgb(0, 0, 0);
+  }
+.shop {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-left: 12%;
+}
+@media (max-width: 768px) {
+    .shop, .shop th, .shop tr {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 11%;
+    margin-bottom: 4%;
+    }
+}
+.shopcontainer {
+    position: relative;
+    width: 50%;
+}
+  
+.shopimg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000c0;
+}
+  
+.shopcontainer:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.maindate {
+    color: #000000;
+    width: 80%;
+    margin-bottom: 2%;
+}
+.mainguests {
+    width: 80%;
+    color: #000000;
+    margin-bottom: 2%;
+}
+.mainduration {
+    color: #000000;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.ticktable {
+    width: 100%;
+}
+.ticktabletr {
+    margin-bottom: 2%;
+    padding: 2%;
+}
+.detailtr{
+    padding: 1%;
+    float: left;
+}
+caption {
+    margin-bottom: 5%;
+}
+.output {
+    width: 100%;
+    font-weight: bold;
+}
+.output tbody tr {
+    border: 1px solid #545252;
+}
+.output tbody td {
+    border: 1px solid #545252;
+}
+.output2 {
+    width: 80%;
+    font-weight: bold;
+}
+.output2 tbody tr {
+    border: 1px solid #545252;
+}
+.output2 tbody td {
+    border: 1px solid #545252;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="This is a website about turtle hatcheries in Sri Lanka - Hikkaduwa">
+        <meta name="author" content="Amika">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/png" href="images/download-removebg-preview.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <title> Tickets </title>
+    </head>
+    <body>
+        <!-- Fixed navigation bar-->
+        <header>
+            <div class="tabmain">
+                <div class="tab1"> <a class="gfg" href="index.html">
+                    <table class="icontable">
+                        <tr>
+                            <th> <img src="images/download-removebg-preview.png" width="90" height="90" alt="Main Turtle Logo"> </th>
+                            <th> <h2 class="title"> Turtles <br> SRI LANKA </h2></th>
+                        </tr>
+                    </table> </a>
+                </div>
+                <div class="tab2">
+                    <table class="icontable">
+                        <tr>
+                            <th class="iconth2"><h2 class="title"> Buy Tickets </h2></th>
+                            <th class="iconth1"><img src="images/png-transparent-bottle-cap-circle-brand-font-raffle-tickets-emblem-label-badge.png" width="230" height="80"> </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </header>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="detailsmain">
+                <div class="ticket1">
+                <p class="homepara2">
+                    <h2>Enter Your Details here...</h2>
+                </p>
+                <br>
+                <form id="personaldetails">
+                    <table class="ticktable">
+                        <tr class="detailtr">
+                            <th> <label for="name">Full Name: &nbsp;&nbsp;&nbsp; </label> </th>
+                            <th> <input type="text" id="name" name="name" required placeholder="Enter your full name"> </th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="detailtr">
+                            <th><label for="phone">Mobile Number: &nbsp;&nbsp;&nbsp;</label></th>
+                            <th><input type="tel" id="phone" name="phone" required placeholder="Enter your mobile number" maxlength="10" minlength="10"> </th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="detailtr">
+                            <th><label for="email">Email: &nbsp;&nbsp;&nbsp;</label></th>
+                            <th><input type="email" id="email" name="email" required placeholder="Enter your email address"> </th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="detailtr">
+                            <th><label for="conemail">Confirm Email: &nbsp;&nbsp;&nbsp;</label></th>
+                            <th><input type="email" id="conemail" name="conemail" required placeholder="Confirm your email address"></th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr class="detailtr">
+                            <th><label for="gender">Gender: &nbsp;&nbsp;&nbsp;</label></th>
+                            <th><select id="gender" name="gender">
+                                <option value="none">None</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select></th>
+                        </tr>
+                    </table>
+                    <br>
+                    <button type="submit" id="contbtn" class="button1"><h2>&nbsp;Submit&nbsp;&nbsp;</h2></button>
+                </form>
+                </div>
+                <br>
+                <div class="ticket2">
+                    <table class="output">
+                        <caption><h2>Ticket Summary</h2>
+                            </caption>
+                            <!-- Ticket summary table -->
+                            <thead>
+                                <tr>
+                                    <td>Date : </td>
+                                    <td id="outdate"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td>Time : </td>
+                                    <td id="outduration"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td>Duration : </td>
+                                    <td id="hour"></td>
+                                </tr>
+                            </thead>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <th>Tickets</th>
+                                    <th>Charges</th>
+                                </tr>
+                            <tbody>
+                                <tr>
+                                    <td id="outsladults"></td>
+                                    <td id="amountsladults"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td id="outslchild"></td>
+                                    <td id="amountslchild"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td id="outfadults"></td>
+                                    <td id="amountfadults"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td id="outfchild"></td>
+                                    <td id="amountfchild"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td id="outinfants"></td>
+                                    <td id="amountinfants"></td>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr>
+                                    <td><b>Total</b></td>
+                                    <td id="amounttot"></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <center>
+                        <a href="payment.html">
+                        <div id="divbtn"> </div>
+                        </a>
+                    </center>
+                </div>
+            </div>
+            <script src="scripts/details.js"></script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="description" content="This is a website about turtle hatcheries in Sri Lanka - Hikkaduwa">
+        <meta name="author" content="Amika">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/png" href="images/download-removebg-preview.png">
+        <link rel="stylesheet" href="styles.css">
+        <title> Tickets </title>
+    </head>
+    <body>
+        <!-- Fixed navigation bar-->
+        <header>
+        <div class="tabmain">
+            <div class="tab1"> <a class="gfg" href="index.html">
+                <table class="icontable">
+                    <tr>
+                        <th> <img src="images/download-removebg-preview.png" width="90" height="90" alt="Main Turtle Logo"> </th>
+                        <th> <h2 class="title"> Turtles <br> SRI LANKA </h2></th>
+                    </tr>
+                </table> </a>
+            </div>
+            <div class="tab2">
+                <table class="icontable">
+                    <tr>
+                        <th class="iconth2"><h2 class="title"> Buy Tickets </h2></th>
+                        <th class="iconth1"><img src="images/png-transparent-bottle-cap-circle-brand-font-raffle-tickets-emblem-label-badge.png" width="230" height="80"> </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="tickets">
+            <div class="ticket1">
+            <br>
+            <br>
+            <form id="ticketdate">
+            <section class="maindate">
+                <legend><h2>---Enter the Dates of your visit---</h2></legend>
+                <br>
+                <br>
+                    <table class="form">
+                        <tr>
+                        <th><label for="date"> <b> Date: </b> </label> </th>
+                        <th><input type="date" id="date" name="date" required></th>
+                        </tr>
+                    </table>
+            </section>
+            <section class="mainguests">
+                <legend><h2>---Select the guests for your visit---</h2></legend>
+                <br>
+                <br>
+                    <table class="form">
+                        <tr class="ticktabletr">
+                            <th><label for="sladults"> Sri Lankan Adults: </label> </th>
+                            <th><input type="number" id="sladults" name="sladults" value="0"> </th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><h6>(Sri Lankans Above 18 years old)</h6></th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><label for="slchild"> Sri Lankan Children: </label> </th>
+                            <th><input type="number" id="slchild" name="slchild" value="0"> </th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><h6>(Sri Lankans between 3 and 18 years old)</h6></th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><label for="fadults"> Foreign Adults: </label> </th>
+                            <th><input type="number" id="fadults" name="fadults" value="0"> </th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><h6>(Foreigners Above 18 years old)</h6></th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><label for="fchild"> Foreign Children: </label> </th>
+                            <th><input type="number" id="fchild" name="fchild" value="0"> </th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><h6>(Foreigners between 3 and 18 years old)</h6></th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><label for="infants"> Infants: </label> </th>
+                            <th><input type="number" id="infants" name="infants" value="0"> </th>
+                        </tr>
+                        <tr class="ticktabletr">
+                            <th><h6>(Anyone below 3 years old)</h6></th>
+                        </tr>
+                    </table>
+            </section>
+                <legend><h2>---Duration of Visit---</h2></legend>
+                <br>
+                <br>
+                    <table class="form">
+                        <tr>
+                            <th><label for="time"> Time of your visit: </label></th>
+                            <th> <select id="time" name="time" required>
+                                <optgroup label="Normal Hours">
+                                    <option value="7.00 am">7.00 am</option>
+                                    <option value="8.00 am">8.00 am</option>
+                                    <option value="9.00 am">9.00 am</option>
+                                    <option value="2.00 pm">2.00 pm</option>
+                                </optgroup>
+                                <optgroup label="Peak Hours">
+                                    <option value="10.00 am">10.00 am</option>
+                                    <option value="11.00 am">11.00 am</option>
+                                    <option value="12.00 pm">12.00 pm</option>
+                                    <option value="1.00 pm">1.00 pm</option>
+                                    <option value="3.00 pm">3.00 pm</option>
+                                    <option value="4.00 pm">4.00 pm</option>
+                                    <option value="5.00 pm">5.00 pm </option>
+                                </optgroup>
+                            </select> </th>
+                        </tr>
+                        <tr>
+                            <th><label for="duration">Duration of your vist: </label> </th>
+                            <th><select id="duration" name="duration" required>
+                                <option value="1 hour">1 Hour</option>
+                                <option value="2 hours">2 Hours</option>
+                                <option value="3 hours">3 Hours</option>
+                                <option value="4 hours">4 Hours</option>
+                                <option value="5 hours">5 Hours</option>
+                            </select></th>
+                        </tr>
+                    </table>
+            </section>
+            <br>
+            <br>
+            <button class="button button1" type="submit" id="tickbtn"><h2>&nbsp;&nbsp;Calculate Total&nbsp;&nbsp;</h2></button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table class="summarytable">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Sri Lankan Adult</th> 
+                    <th>Sri Lanakn Child</th>
+                    <th>Foreign Adult</th>
+                    <th>Foreign Child</th>
+                    <th>Infants&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Normal Hours</th>
+                    <td data-label="SL Adult">4 USD</td>
+                    <td data-label="SL Child">2 USD</td>
+                    <td data-label="F. Adult">10 USD</td>
+                    <td data-label="F. Child"> 5 USD</td>
+                    <td data-label="Infant">0 USD</td>
+                </tr>
+                <tr>
+                    <th>Peak Hours</th>
+                    <td data-label="SL Adult">6 USD</td>
+                    <td data-label="SL Child">3 USD</td>
+                    <td data-label="F. Adult">13 USD</td>
+                    <td data-label="F. Child.">8 USD</td>
+                    <td data-label="Infant">0 USD</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="ticket2">
+                <table class="output">
+                    <caption><h2>Ticket Summary</h2>
+                        </caption>
+                        <!-- Ticket summary table -->
+                        <thead>
+                            <tr>
+                                <td>Date : </td>
+                                <td id="outdate"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Time : </td>
+                                <td id="outduration"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td>Duration : </td>
+                                <td id="hour"></td>
+                            </tr>
+                        </thead>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <th>Tickets</th>
+                                <th>Charges</th>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td id="outsladults"></td>
+                                <td id="amountsladults"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td id="outslchild"></td>
+                                <td id="amountslchild"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td id="outfadults"></td>
+                                <td id="amountfadults"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td id="outfchild"></td>
+                                <td id="amountfchild"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td id="outinfants"></td>
+                                <td id="amountinfants"></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td><b>Total</b></td>
+                                <td id="amounttot"></td>
+                            </tr>
+                        </tbody>
+                </table>
+                <br>
+                <br>
+                <center>
+                <a href="details.html">
+                    <div id="divbtn"> </div>
+                </a>
+                </center>
+            </div>
+        </div>
+        <script src="scripts/tickets.js"></script>
+    </body>
+</html>
